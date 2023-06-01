@@ -1,11 +1,11 @@
 # LINFO1140 : Synthesis
 ## Bases électroniques de l'informatique/Principes de fonctionnement des ordinateurs
-<div style="text-align: right"> <i>Olivier Bonaventure</i> </div>
+<div align="left"> <i>Olivier Bonaventure</i> </div>
 
 ## Abstract
 
 This synthesis serves as a reflection on LINFO1140 taken during the second semester of the 2022-2023 academic year. Taught by Olivier Bonaventure, this course marked the inaugural offering, providing a comprehensive introduction to the fundamental principles of digital devices and computer operation. As the author writes this synthesis in May 2023, amidst the anticipation of upcoming exams, the atmosphere is bathed in sunlight, enhancing the sense of reflection and the culmination of a transformative learning experience.
-<div style="text-align: right"> <i>Thomas Schiltz</i> </div>
+<div align="left"> <i>Thomas Schiltz</i> </div>
 
 ## Introduction
 

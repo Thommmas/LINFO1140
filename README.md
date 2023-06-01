@@ -1,4 +1,4 @@
-# LINFO1140 : Synthesis
+# LINFO1140 
 ## Bases électroniques de l'informatique/Principes de fonctionnement des ordinateurs
 <div align="right"> <i>Olivier Bonaventure</i> </div>
 

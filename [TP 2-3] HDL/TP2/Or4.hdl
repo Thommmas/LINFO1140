@@ -1,0 +1,31 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Or16.hdl
+
+/**
+ * 16-bit bitwise Or:
+ * for i = 0..15 out[i] = (a[i] or b[i])
+ */
+
+CHIP Or4 {
+    IN a[4], b[4];
+    OUT out[4];
+
+    PARTS:
+    // Put your code here:
+    Not(in=a[0], out=w0);
+    Not(in=a[1], out=w1);
+    Not(in=a[2], out=w2);
+    Not(in=a[3], out=w3);
+
+    Not(in=b[0], out=u0);
+    Not(in=b[1], out=u1);
+    Not(in=b[2], out=u2);
+    Not(in=b[3], out=u3);
+
+    Nand(a=w0, b=u0, out=out[0]);
+    Nand(a=w1, b=u1, out=out[1]);
+    Nand(a=w2, b=u2, out=out[2]);
+    Nand(a=w3, b=u3, out=out[3]);
+}

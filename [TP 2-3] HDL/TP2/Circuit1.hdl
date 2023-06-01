@@ -1,0 +1,32 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Circuit1.hdl
+
+CHIP Circuit1 {
+    IN a, b, c;
+    OUT out;
+
+    PARTS:
+    // Put your code here:
+    Not(in=a, out=u1);
+    Not(in=b, out=u2);
+    Not(in=c, out=u3);
+
+    And(a=u1,b=b,out=v1);
+    And(a=a,b=u2,out=v2);
+    And(a=a,b=b,out=v3);
+    
+    And(a=v1,b=u3,out=x1);
+    And(a=v1,b=c,out=x2);
+    And(a=v2,b=u3,out=x3);
+    And(a=v2,b=c,out=x4);
+    And(a=v3,b=u3,out=x5);
+    And(a=v3,b=c,out=x6);
+    
+    Or(a=x1,b=x2,out=n1);
+    Or(a=n1,b=x3,out=n2);
+    Or(a=n2,b=x4,out=n3);
+    Or(a=n3,b=x5,out=n4);
+    Or(a=n4,b=x6,out=out);
+}

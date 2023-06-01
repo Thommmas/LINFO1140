@@ -1,0 +1,9 @@
+CHIP Inc2 {
+    IN in[2];
+    OUT out[2];
+
+    PARTS:
+    // Commencez ici
+    Not(in=in[0],out=out[0]);
+    Xor(a=in[1],b=in[0],out=out[1]);
+}

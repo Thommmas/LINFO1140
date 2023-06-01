@@ -1,0 +1,6 @@
+JEQ;==0
+JNE;!=0
+JGT;x>0
+JLT;x<0
+JGE;>=0
+JLE;<=0

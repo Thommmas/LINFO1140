@@ -1,0 +1,10 @@
+CHIP Add2 {
+    IN a[2], b[2];
+    OUT out[2];
+
+    PARTS:
+    // Commencez ici
+    HalfAdder(a=a[0],b=b[0],sum=out[0],carry=n2);
+    FullAdder(a=a[1],b=b[1],c=n2,sum=out[1],carry=n0);
+    
+}

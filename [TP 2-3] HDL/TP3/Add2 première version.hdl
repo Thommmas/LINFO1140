@@ -1,0 +1,11 @@
+CHIP Add2 {
+    IN a[2], b[2];
+    OUT out[2];
+
+    PARTS:
+    // Commencez ici
+    Xor(a=a[0],b=b[0],out=out[0]);
+    And(a=a[0],b=b[0],out=n);
+    Xor(a=a[1],b=b[1],out=m);
+    Xor(a=m,b=n,out=out[1]);
+}
